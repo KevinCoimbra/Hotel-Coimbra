@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Coimbra</title>
+    <link rel="stylesheet" href="Css/kevin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hotel Coimbra</h1>
+        <nav>
+            <ul>
+                <li><a href="#principal" title="Clique">Início</a></li>
+                <li><a href="#messi" title="Clique">Galeria</a></li>
+                <li><a href="#domingues" title="Clique">Preços</a></li>
+                <li><a href="#ronaldinho" title="Clique">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="principal" class="barcelona">
+        <h2>Bem-vindo ao Hotel Coimbra</h2>
+        <p>Desfrute de uma estadia confortável e agradável no coração da cidade. Conheça nossos quartos, serviços e reserve já sua hospedagem.</p>
+    </section>
+
+    <section id="messi" class="barcelona">
+        <h2>Galeria do Hotel</h2>
+        <div class="fotos">
+            <img src="imagens/interior-modern-comfortable-hotel-room.jpg" alt="Quarto 1">
+            <img src="imagens/one-king-size-bed-hotel-room.jpg" alt="Quarto 2">
+            <img src="imagens/indoor-hotel-view.jpg" alt="hotel">
+            <img src="imagens/hammocks-umbrellas-with-trees.jpg" alt="Piscina">
+        </div>
+    </section>
+
+    <section id="domingues" class="barcelona">
+        <h2>Preços dos Quartos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tipo de Quarto</th>
+                    <th>Preço por Noite</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Quarto Standard</td>
+                    <td>2.000Mts</td>
+                </tr>
+                <tr>
+                    <td>Quarto Deluxe</td>
+                    <td> 4.500Mts</td>
+                </tr>
+                <tr>
+                    <td>Suíte</td>
+                    <td>9.000Mts</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="ronaldinho" class="barcelona">
+        <h2>Reserva de Quartos</h2>
+        <form id="bookingForm">
+            <label for="name">Nome Completo:</label>
+            <input type="text" id="name" required placeholder="Digite o seu nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required placeholder="Digite o seu email">
+
+            <label for="roomType">Tipo de Quarto:</label>
+            <select id="roomType" required>
+                <option value="">Selecione...</option>
+                <option value="Standard">Quarto Standard</option>
+                <option value="Deluxe">Quarto Deluxe</option>
+                <option value="Suite">Suíte</option>
+            </select>
+
+            <label for="checkin">Check-in:</label>
+            <input type="date" id="checkin" required>
+
+            <label for="checkout">Check-out:</label>
+            <input type="date" id="checkout" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+        <div id="chelsea"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel Coimbra. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
